@@ -53,12 +53,18 @@ To go further, there are fixtures in pytest.
 Fixtures in pytest are Python decorators that allow for the initialization of parts of code that can be isolated and reused.  
 Written in the following format:
 ```
-@pytest.fixture #test fixture decorator
+import pytest
+
+class Student:
+    def __init__(self):
+        self.grades = []
+
+@pytest.fixture
 def student():
-  return Student()  #create an instance of student
-# Student() peut être réutiliser dans les fonctions du code
-def test_create_student_grades():
-  assert(student.grades) == []
+    return Student()
+
+def test_create_student_grades(student):
+    assert student.grades == []
 ```
 
 #### Parametrize
