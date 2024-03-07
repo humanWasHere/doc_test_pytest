@@ -51,6 +51,7 @@ Ne pas faire de assert mais plutôt ```pd.testing.assert_frames_equal```.
 #### Fixtures
 To go further, there are fixtures in pytest.  
 Fixtures in pytest are Python decorators that allow for the initialization of parts of code that can be isolated and reused.  
+For classes, it initializes a new version of a given class each time the fixture is called.
 Written in the following format:
 ```
 import pytest
