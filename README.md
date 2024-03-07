@@ -17,6 +17,7 @@ Pytest is a Python testing library.
 It is important to follow the testing pyramid in terms of creating tests and their significance in software development.  
 For example, one can refer to testing methodologies such as AAA or GWT for unit tests (Arrange, Act, Assert or Given When Then, respectively).  
 Developing a unit test means being precise and isolated. When working with data such as pandas data, it is important to only include the necessary columns for the test to function.  
+In pytest, classes must be written in PascalCase.  
 
 ## Unit Tests
 Unit tests are tests that allow for a detailed examination of the code.  
